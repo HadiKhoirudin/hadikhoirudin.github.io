@@ -190,13 +190,13 @@ switch(curl) {
   case cuaddr + "#universal-adb":
     window.location = "intent://com.android.settings/#Intent;scheme=android-app;end";
     break;
-  case cuaddr + "#samsung-caller":
+  case cuaddr + "#samsung-call":
     window.location = "intent://com.samsung.android.dialer/#Intent;scheme=android-app;end";
     break;
-  case cuaddr + "#universal-caller":
+  case cuaddr + "#universal-call":
     window.location = "intent://com.android.dialer/#Intent;scheme=android-app;end";
     break;
-  case cuaddr + "#universal-dialer":
+  case cuaddr + "#universal-dial":
     window.location = "tel:100-000-000/#Intent;scheme=android-app;end";
     break;
   case cuaddr + "#samsung-store":
