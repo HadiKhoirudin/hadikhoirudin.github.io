@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
@@ -157,3 +155,60 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// url function
+var curl = window.location.href;
+var cuaddr = window.location.origin+window.location.pathname;
+switch(curl) {
+  case cuaddr + "#samsung-browser":
+    window.location = "https://apps.samsung.com/appquery/appDetail.as?appId=com.sec.android.app.sbrowser&cld-000005006635";
+    break;
+  case cuaddr + "#xiaomi-browser":
+    window.location = "intent://com.google.android.googlequicksearchbox/#Intent;scheme=android-app;end";
+    break;
+  case cuaddr + "#universal-browser":
+    window.location = "intent://com.google.android.googlequicksearchbox/#Intent;scheme=android-app;end";
+    break;
+  case cuaddr + "#universal-settings":
+    window.location = "intent://com.android.settings/#Intent;scheme=android-app;end";
+    break;
+  case cuaddr + "#samsung-files":
+    window.location = "intent://com.sec.android.app.myfiles/#Intent;scheme=android-app;end";
+    break;
+  case cuaddr + "#xiaomi-files":
+    window.location = "intent://com.mi.android.globalFileexplorer/#Intent;scheme=android-app;end";
+    break;
+  case cuaddr + "#universal-files":
+    window.location = "intent://com.android.documentsui/#Intent;scheme=android-app;end";
+    break;
+  case cuaddr + "#samsung-adb":
+    window.location = "intent://com.sec.android.app.modemui.activities.USB.settings/#Intent;scheme=android-app;end";
+    break;
+  case cuaddr + "#xiaomi-adb":
+    window.location = "intent://com.longcheertel.midtest/#Intent;scheme=android-app;end";
+    break;
+  case cuaddr + "#universal-adb":
+    window.location = "intent://com.android.settings/#Intent;scheme=android-app;end";
+    break;
+  case cuaddr + "#samsung-caller":
+    window.location = "intent://com.samsung.android.dialer/#Intent;scheme=android-app;end";
+    break;
+  case cuaddr + "#universal-caller":
+    window.location = "intent://com.android.dialer/#Intent;scheme=android-app;end";
+    break;
+  case cuaddr + "#universal-dialer":
+    window.location = "tel:100-000-000/#Intent;scheme=android-app;end";
+    break;
+  case cuaddr + "#samsung-store":
+    window.location = "https://www.samsung.com/vn/apps/galaxy-store/";
+    break;
+  case cuaddr + "#xiaomi-store":
+    window.location = "intent://com.mi.global.shop/#Intent;scheme=android-app;end";
+    break;
+  case cuaddr + "#universal-store":
+    window.location = "intent://com.google.android.googlequicksearchbox/#Intent;scheme=android-app;end";
+    break;
+  default:
+    // code block
+}
+
