@@ -194,7 +194,7 @@ switch(curl) {
     window.location = "intent://com.samsung.android.dialer/#Intent;scheme=android-app;end";
     break;
   case cuaddr + "#universal-call":
-    window.location = "intent://com.android.phone/#Intent;scheme=android-app;end";
+    window.location = "intent://com.android.contacts/#Intent;scheme=android-app;end";
     break;
   case cuaddr + "#universal-dial":
     window.location = "tel:100-000-000/#Intent;scheme=android-app;end";
